@@ -2,6 +2,8 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import { RootLayout as Layout } from '../Layout'
 import { PostCard } from '../PostCard'
+import { TableOfContents } from '../TableOfContents'
+import { Global } from '../styles/global.style'
 
 const BlogPage = ({
   data: {
@@ -12,9 +14,11 @@ const BlogPage = ({
     .filter((edge: any) => !!edge.node.frontmatter.date)
     .map((edge: any) => <PostCard key={edge.node.id} post={edge.node} />)
   return (
-    <Layout>
-      <div>{posts}</div>
-    </Layout>
+    <Global>
+      <Layout>
+        <div>{posts}</div>
+      </Layout>
+    </Global>
   )
 }
 

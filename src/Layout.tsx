@@ -6,10 +6,12 @@ import { pathPrefix } from '../gatsby-config'
 import { Layout } from 'antd'
 import { Sidebar } from './sidebar'
 import { TableOfContents } from './TableOfContents'
+import { Global } from './styles/global.style'
 
 const { Sider, Content } = Layout
 
 export function RootLayout({ children }: React.PropsWithChildren<{}>) {
+  console.log(children)
   return (
     <StaticQuery
       query={graphql`
@@ -53,7 +55,14 @@ export function RootLayout({ children }: React.PropsWithChildren<{}>) {
         const { title } = data.site.siteMetadata
 
         return (
-          <div style={{ width: '100%', padding: 0, overflow: 'hidden' }}>
+          <div
+            style={{
+              width: '95%',
+              padding: 0,
+              overflow: 'hidden',
+            }}
+          >
+            <Global />
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
