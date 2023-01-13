@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Collabnix Dockerlab',
+    title: 'Collabnix',
   },
   plugins: [
     `gatsby-plugin-typescript`,

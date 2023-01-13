@@ -5,7 +5,7 @@ import { NavItems } from './NavItems'
 
 const Navbar = () => {
   return (
-    <Menu mode="horizontal">
+    <Menu style={{ width: '100%' }} mode="horizontal">
       <MenuItem style={{ marginRight: 'auto' }}>Collabnix</MenuItem>
       {NavItems.map((key) => {
         return (

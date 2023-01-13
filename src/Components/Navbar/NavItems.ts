@@ -7,20 +7,20 @@ export const NavItems = [
   },
 
   {
-    label: 'Community',
-    key: 'community',
+    label: 'Dockertools',
+    key: 'dockertools',
     link: 'https://launchpass.com/collabnix',
-    disabled: false,
+    disabled: true,
   },
   {
-    label: 'Github',
-    key: 'github',
+    label: 'Kubetools',
+    key: 'Kubetools',
     link: 'https://github.com/collabnix',
-    disabled: false,
+    disabled: true,
   },
   {
     label: 'Kubelabs',
-    key: 'kubelab',
+    key: 'Kubelab',
     link: '/docs/template/get-started/introduction',
     disabled: true,
   },
