@@ -4,14 +4,12 @@ import { StaticQuery, graphql } from 'gatsby'
 import { Header } from './Header'
 import { pathPrefix } from '../gatsby-config'
 import { Layout } from 'antd'
-import { Sidebar } from './sidebar'
-import { TableOfContents } from './TableOfContents'
+import Sidebar from './sidebar'
 import { Global } from './styles/global.style'
 
 const { Sider, Content } = Layout
 
 export function RootLayout({ children }: React.PropsWithChildren<{}>) {
-  console.log(children)
   return (
     <StaticQuery
       query={graphql`
@@ -57,8 +55,7 @@ export function RootLayout({ children }: React.PropsWithChildren<{}>) {
         return (
           <div
             style={{
-              width: '95%',
-              padding: 0,
+              padding: '0',
               overflow: 'hidden',
             }}
           >
@@ -93,7 +90,6 @@ export function RootLayout({ children }: React.PropsWithChildren<{}>) {
                   {children}
                 </Content>
               </Layout>
-              <TableOfContents />
             </div>
             <Layout>
               <Sider
