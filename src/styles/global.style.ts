@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 export const Global = createGlobalStyle`
-body{
-  overflow: hidden;
-}
+
     table {
     border-collapse: separate ; 
     border-spacing: 1.2rem 0.5rem  ;
@@ -15,5 +13,8 @@ body{
   max-height: 100vh;
   overflow-y: auto;
   background-color: white;
+}
+.ant-layout-content{
+font-size: 1.2rem;
 }
 `
