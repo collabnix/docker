@@ -1,5 +1,5 @@
 [build]
-  command = "python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && mkdocs build"
+  command = "python3 install -q poetry && poetry config virtualenvs.in-project true && poetry install -v && python  -m venv venv && source venv/bin/activate && pip install -r requirements.txt && mkdocs build"
   publish = "site"
 
 [context.production.environment]
