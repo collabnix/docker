@@ -1,19 +1,15 @@
 [tool.poetry]
-name = "Dockerlabs"
-version = "0.1.0"
-description = "DockerLabs"
-authors = ["Ajeet Raina <ajeetraina@gmail.com>"]
+name = "dockerlabs"
+version = "1.0"
+description = "An Ultimate Hands-on Labs of Docker"
+authors = ["Ajeet Singh Raina <ajeetraina@Docker-Ajeet-Singh-Rainas-MacBook-Pro.local>"]
 license = "MIT"
+readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.7"
-mkdocs = "^1.0.4"
-mkdocs-material = "^4.6.0"
-pymdown-extensions = "^6.2.1"
-fontawesome-markdown = "^0.2.6"
+python = "^3.10"
 
-[tool.poetry.dev-dependencies]
 
 [build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
