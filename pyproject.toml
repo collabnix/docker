@@ -6,7 +6,7 @@ authors = ["Ajeet Singh Raina <ajeetraina@Docker-Ajeet-Singh-Rainas-MacBook-Pro.
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.8"
 mkdocs = "^1.4.2"
 mkdocs-material = "^9.0.5"
 pymdown-extensions = "^9.9.1"
