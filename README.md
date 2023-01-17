@@ -1,6 +1,6 @@
 # Docker Labs 
 
-## Building it locally
+## Running it locally
 
 ## Prereq
 
