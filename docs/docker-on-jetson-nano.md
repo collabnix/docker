@@ -1,5 +1,8 @@
 # Getting Started with NVIDIA Jetson Nano
 
+![image](https://user-images.githubusercontent.com/34368930/212855112-8895c2f4-6aba-4724-9185-b866e369de95.png)
+
+
 
 ## Table of Contents
 
@@ -35,7 +38,8 @@ Everything and anything you want to know about NVIDIA Jetson Nano, Docker & K3s 
  - Insert SD card into your system. 
  - Bring up Etcher tool and select the target SD card to which you want to flash the image.
 
-![My Image](https://github.com/collabnix/ioetplanet/blob/master/nvidia/jetsonnano/Screenshot%202020-09-16%20at%2010.29.02%20AM.png)
+![image](https://user-images.githubusercontent.com/34368930/212854917-8ead3f07-03f4-4189-8eb0-dbbcaed4ee7f.png)
+
 
 ```
 sudo lshw -C system
