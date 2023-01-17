@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "dockerlabs"
-version = "1.0"
-description = "An Ultimate Hands-on Labs of Docker"
+name = "site"
+version = "0.1.0"
+description = ""
 authors = ["Ajeet Singh Raina <ajeetraina@Docker-Ajeet-Singh-Rainas-MacBook-Pro.local>"]
 license = "MIT"
 readme = "README.md"
