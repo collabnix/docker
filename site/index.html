@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" /><link rel="canonical" href="https://community.collabnix.com/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" /><link rel="canonical" href="https://dockerlabs.collabnix.com/" />
       <link rel="shortcut icon" href="img/favicon.ico" />
     <title>Collabnix</title>
     <link rel="stylesheet" href="css/theme.css" />
@@ -43,16 +43,39 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#project-layout">Project layout</a>
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
     </li>
     </ul>
                 </li>
               </ul>
+              <p class="caption"><span class="caption-text">Installation</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="about/">About</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="docker-desktop-for-linux/">Installing Docker Desktop for Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="docker-desktop-for-windows/">Installing Docker Desktop for Windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="docker-desktop-for-mac/">Installing Docker Desktop for Mac</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="docker-on-raspberrypi/">Installing Docker on Raspberry Pi</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="docker-on-jetson-nano/">Installing Docker on NVIDIA Jetson</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started with Docker Hub</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="docker-hub/">Creating Your Docker Hub Account</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started with Docker Image</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="hello-world/">Running Hello World Example</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="working-with-docker-image/">Working with Docker Image</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="saving-images-and-containers/">Saving Images and Containers as tar files</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="building-first-alpine/">Building Your First Alpine Docker Image</a>
+                  </li>
               </ul>
       </div>
     </div>
@@ -78,25 +101,88 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="home">Home</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<p>Learn to build, share and run your contanerised applications easily with Docker</p>
+<h2 id="overview">Overview</h2>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>Beginners</li>
+<li>Creating Your DockerHub Account</li>
+<li>Getting Started with Docker Image</li>
+<li>
+<p>Running Hello World Example</p>
+</li>
+<li>
+<p>Working with Docker Image</p>
+</li>
+<li>Saving Images and Containers as Tar Files for Sharing</li>
+<li>Building Your First Alpine Docker Image and Push it to DockerHub</li>
+<li>Accessing &amp; Managing Docker Container</li>
+<li>Accessing the Container Shell</li>
+<li>Running a Command inside running Container</li>
+<li>
+<p>Managing Docker Containers</p>
+</li>
+<li>
+<p>Getting Started with Dockerfile</p>
+</li>
+<li>What is Dockerfile</li>
+<li>Understanding Layering Concept with Dockerfile</li>
+<li>Creating Docker Image with<ul>
+<li>Lab #1: Installing GIT</li>
+<li>Lab #2: ADD instruction</li>
+<li>Lab #3: COPY instruction</li>
+<li>Lab #4: CMD instruction</li>
+<li>Lab #5: ENTRYPOINT instruction</li>
+<li>Lab #6: WORKDIR instruction</li>
+<li>Lab #7: RUN instruction</li>
+<li>Lab #8: ARG instruction</li>
+<li>Lab #9: ENV instruction</li>
+<li>Lab #10: VOLUME instruction</li>
+<li>Lab #11: EXPOSE instruction</li>
+<li>Lab #12: LABEL instruction</li>
+<li>Lab #13: ONBUILD instruction</li>
+<li>Lab #14: HEALTHCHECK instruction</li>
+<li>Lab #15: SHELL instruction</li>
+<li>Lab #16: Entrypoint Vs RUN</li>
+<li>Lab #17: USER instruction</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+</li>
+<li>
+<p>Writing Dockerfile with Hello Python Script Added</p>
+</li>
+<li>
+<p>Creating Private Docker Registry</p>
+</li>
+<li>Building a Private Docker Registry</li>
+<li>
+<p>Building a Private Docker Registry with UI</p>
+</li>
+<li>
+<p>Docker Volumes</p>
+</li>
+<li>Managing volumes through Docker CLI</li>
+<li>
+<p>Creating Volume Mount from docker run command &amp; sharing same Volume Mounts among multiple containers</p>
+</li>
+<li>
+<p>Docker Networking</p>
+</li>
+<li>The docker network Command<ul>
+<li>Lab #1: Listing the Networks</li>
+<li>Lab #2: Inspecting a Network</li>
+<li>Lab #3: List network driver plugins</li>
+<li>Lab #4: Docker Bridge Networking</li>
+<li>Lab #5: Basics of Docker Bridge Networking</li>
+<li>Lab #6: Connect a Docker container to bridge network</li>
+<li>Lab #7: Test Network Connectivity</li>
+<li>Lab #8: Configure NAT for external connectivity</li>
+</ul>
+</li>
+</ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="docker-desktop-for-linux/" class="btn btn-neutral float-right" title="Installing Docker Desktop for Linux">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -120,7 +206,7 @@ docs/
     
     
     
-      <span><a href="about/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="docker-desktop-for-linux/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
@@ -139,5 +225,5 @@ docs/
 
 <!--
 MkDocs version : 1.4.2
-Build Date UTC : 2023-01-17 04:56:41.116052+00:00
+Build Date UTC : 2023-01-17 06:14:03.116521+00:00
 -->

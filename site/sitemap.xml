@@ -1,12 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://community.collabnix.com/</loc>
+         <loc>https://dockerlabs.collabnix.com/</loc>
          <lastmod>2023-01-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://community.collabnix.com/about/</loc>
+         <loc>https://dockerlabs.collabnix.com/building-first-alpine/</loc>
+         <lastmod>2023-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dockerlabs.collabnix.com/docker-desktop-for-linux/</loc>
+         <lastmod>2023-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dockerlabs.collabnix.com/docker-desktop-for-mac/</loc>
+         <lastmod>2023-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dockerlabs.collabnix.com/docker-desktop-for-windows/</loc>
+         <lastmod>2023-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dockerlabs.collabnix.com/docker-hub/</loc>
+         <lastmod>2023-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dockerlabs.collabnix.com/docker-on-jetson-nano/</loc>
+         <lastmod>2023-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dockerlabs.collabnix.com/docker-on-raspberrypi/</loc>
+         <lastmod>2023-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dockerlabs.collabnix.com/hello-world/</loc>
+         <lastmod>2023-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dockerlabs.collabnix.com/saving-images-and-containers/</loc>
+         <lastmod>2023-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dockerlabs.collabnix.com/working-with-docker-image/</loc>
          <lastmod>2023-01-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
