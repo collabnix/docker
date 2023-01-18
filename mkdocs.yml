@@ -15,4 +15,4 @@ nav:
       - Working with Docker Image: working-with-docker-image.md
       - Saving Images and Containers as tar files: saving-images-and-containers.md
       - Building Your First Alpine Docker Image: building-first-alpine.md 
-theme: readthedocs
+theme: material
