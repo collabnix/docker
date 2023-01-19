@@ -1,7 +1,7 @@
 site_name: Collabnix
 site_url: https://dockerlabs.collabnix.com/
 nav:
-  - Home: 1_index.md
+  - Home: index.md
   - Installation:
       - Installing Docker Desktop for Linux: 2_Installation/docker-desktop-for-linux.md
       - Installing Docker Desktop for Windows: 2_Installation/docker-desktop-for-windows.md
