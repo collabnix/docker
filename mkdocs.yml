@@ -1,18 +1,23 @@
 site_name: Collabnix
 site_url: https://dockerlabs.collabnix.com/
 nav:
-    - Home: index.md
-    - Installation: 
-      - Installing Docker Desktop for Linux: docker-desktop-for-linux.md
-      - Installing Docker Desktop for Windows: docker-desktop-for-windows.md
-      - Installing Docker Desktop for Mac: docker-desktop-for-mac.md
-      - Installing Docker on Raspberry Pi: docker-on-raspberrypi.md
-      - Installing Docker on NVIDIA Jetson: docker-on-jetson-nano.md
-    - Getting Started with Docker Hub:
-      - Creating Your Docker Hub Account: docker-hub.md
-    - Getting Started with Docker Image:
-      - Running Hello World Example: hello-world.md
-      - Working with Docker Image: working-with-docker-image.md
-      - Saving Images and Containers as tar files: saving-images-and-containers.md
-      - Building Your First Alpine Docker Image: building-first-alpine.md 
+  - Home: 1_Home/index.md
+  - Installation:
+      - Installing Docker Desktop for Linux: 2_Installation/docker-desktop-for-linux.md
+      - Installing Docker Desktop for Windows: 2_Installation/docker-desktop-for-windows.md
+      - Installing Docker Desktop for Mac: 2_Installation/docker-desktop-for-mac.md
+      - Installing Docker on Raspberry Pi: 2_Installation/docker-on-raspberrypi.md
+      - Installing Docker on NVIDIA Jetson: 2_Installation/docker-on-jetson-nano.md
+  - Docker for Beginners:
+      - Getting Started with Docker Hub:
+          - Creating Your Docker Hub Account: 3_Docker-For-Beginners/1_Getting-Started-with-Docker-Hub/docker-hub.md
+      - Getting Started with Docker Image:
+          - Running Hello World Example: 3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/hello-world.md
+          - Working with Docker Image: 3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/working-with-docker-image.md
+          - Saving Images and Containers as tar files: 3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/saving-images-and-containers.md
+          - Building Your First Alpine Docker Image: 3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/building-first-alpine.md
+      - Accessing And Managing Docker Containers:
+          - Accessing The Container Shell: 4_Accessing-And-Managing-Docker-Container/Accessing-The-Container-Shell.md
+          - Managing Docker Containers: 4_Accessing-And-Managing-Docker-Container/Managing-Docker-Containers.md
+          - Running A Command Inside Running Container: 4_Accessing-And-Managing-Docker-Container/Running-A-Command-Inside-Running-Container.md
 theme: material
