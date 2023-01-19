@@ -1,6 +1,4 @@
-
 # Demonstrating Hello World Example
-
 
 ## Tested Infrastructure
 
@@ -23,13 +21,10 @@
 ## Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com)
-- Open [PWD](https://labs.play-with-docker.com/) Platform on your browser 
+- Open [PWD](https://labs.play-with-docker.com/) Platform on your browser
 - Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
-
 ## Running Hello World Example
-
-
 
 ```
 $ docker run hello-world
@@ -38,13 +33,7 @@ $ docker run hello-world
 
 <img width="814" alt="image" src="https://user-images.githubusercontent.com/34368930/213098335-65bbb47a-929e-4526-8381-5d8a59b53936.png">
 
-
-
-
-
-
 ## Explanation
-
 
 This image is a prime example of using the scratch image effectively. See hello.c in https://github.com/docker-library/hello-world for the source code of the hello binary included in this image.
 
@@ -52,7 +41,7 @@ So what’s happened here? We’ve called the docker run command, which is respo
 
 The argument hello-world is the name of the image someone created on dockerhub for us. It will first search for "hello-world" image locally and then search in Dockerhub.
 
-Once the image has been downloaded, Docker turns the image into a running container and executes it. 
+Once the image has been downloaded, Docker turns the image into a running container and executes it.
 
 ## Did you Know?
 
@@ -73,7 +62,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
       PORTS               NAMES
 ```
 
-3. You can use `docker inspect <imagename>` command to inspect about this particular Docker Image. 
+3. You can use `docker inspect <imagename>` command to inspect about this particular Docker Image.
 
 ```
 $ docker inspect 4ab
@@ -168,13 +157,8 @@ $ docker inspect 4ab
 ]
 ```
 
-
-
-
 ## Contributor
 
 [Ajeet Singh Raina](ajeetraina@gmail.com)
 
-
 [Next: Working with Docker Images](https://collabnix.github.io/dockerlabs/beginners/workingwithdockerimage.html)
-
