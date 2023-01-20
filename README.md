@@ -34,4 +34,6 @@ INFO     -  [08:48:14] Serving on http://127.0.0.1:8000/
 Open ```http://127.0.0.1:8000/``` to access the site
 
 
+## Reference
 
+- [Netlify + Mkdocs](https://collabnix.com/how-to-deploy-a-static-site-using-mkdocs-and-netlify/)
