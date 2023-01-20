@@ -36,4 +36,4 @@ Open ```http://127.0.0.1:8000/``` to access the site
 
 ## Reference
 
-- [Netlify + Mkdocs](https://collabnix.com/how-to-deploy-a-static-site-using-mkdocs-and-netlify/)
+- [How to Deploy a static Site using Mkdocs and Netlify](https://collabnix.com/how-to-deploy-a-static-site-using-mkdocs-and-netlify/)
