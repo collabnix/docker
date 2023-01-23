@@ -2,8 +2,6 @@
 
 ## Docker - Beginners | Intermediate | Advanced
 
-[View on GitHub](https://github.com/collabnix/dockerlabs) [Join Slack](https://join.slack.com/t/collabnix/shared_invite/zt-1gank9ask-YM4ZbCtRq2id9G2o01ItgA) [Docker Cheatsheet](https://collabnix.com/docker-cheatsheet/) [Docker Compose Cheatsheet](https://collabnix.com/docker-compose-cheatsheet/) [Follow us on Twitter](https://twitter.com/collabnix)# Saving Images and Containers as Tar Files for Sharing
-
 Imagine a scenario where you have built Docker images and containers that you would be interested to keep and share it with your other collaborators or colleagues. The below methods shall help you achieve it.
 
 Four basic Docker CLI comes into action:
@@ -22,57 +20,38 @@ Four basic Docker CLI comes into action:
 ## Pre-requisite
 
 - Create an account with [DockerHub](https://hub.docker.com/)
-- Open [PWD](https://labs.play-with-docker.com/) Platform on your browser
-- Click on **Add New Instance** on the left side of the screen to bring up Alpine OS instance on the right side
 
 ## Create Nginx Container
 
-```
-$ docker run -d -p 80:80 nginx
-Unable to find image 'nginx:latest' locally
-latest: Pulling from library/nginx
-a5a6f2f73cd8: Pull complete
-1ba02017c4b2: Pull complete
-33b176c904de: Pull complete
-Digest: sha256:5d32f60db294b5deb55d078cd4feb410ad88e6fe77500c87d3970eca97f54dba
-Status: Downloaded newer image for nginx:latest
-df2caf9283e84a15bb2321a17aabe84e3e0762ec82fc180e2a4c15fcf0f96588
-[node1] (local) root@192.168.0.33 ~
-```
+`docker run -d -p 80:80 nginx`
+
+![nginx pull](image/saving-img-containers/nginx-pull.png)
 
 ## Displaying Running Container
 
-```
-$ docker ps -a
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                NAMES
-df2caf9283e8        nginx               "nginx -g 'daemon of…"   35 seconds ago      Up 34 seconds       0.0.0.0:80->80/tcp   vigorous_jang
-```
+`docker ps -a`
 
-```
-$ docker export df2 > nginx.tar
-```
+![docker images](image/saving-img-containers/psa.png)
+
+`docker export df2 > nginx.tar`
+
+![docker export](image/saving-img-containers/export.png)
 
 You could commit this container as a new image locally, but you could also use the Docker import command:
 
-```
-$ docker import - mynginx < nginx.tar
-sha256:aaaed50d250a671042e8dc383c6e05012e245f5eaf555d10c40be63f6028ee7b
-```
+`docker import - mynginx < nginx.tar`
 
-```
-$ docker images
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-mynginx             latest              aaaed50d250a        25 seconds ago      107MB
-nginx               latest              568c4670fa80        2 weeks ago         109MB
-```
+![docker import](image/saving-img-containers/import.png)
+
+![docker ps](image/saving-img-containers/docker_images.png)
 
 If you wanted to share this image with one of your collaborators, you could upload the tar file on a web server and let your collaborator download it and use the import command on his Docker host.
 
 If you would rather deal with images that you have already committed, you can use the load and save commands:
 
-```
-$ docker save -o mynginx1.tar nginx
-```
+`docker save -o mynginx1.tar nginx`
+
+![docker save](image/saving-img-containers/save.png)
 
 ```
 $ ls -l
@@ -95,15 +74,7 @@ $ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 ```
 
-```
-$ docker load < mynginx1.tar
-Loaded image: nginx:latest
-```
+`docker load < mynginx1.tar`
+![docker load](image/saving-img-containers/load.png)
 
-```
-[node1] (local) root@192.168.0.33 ~$ docker images
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-nginx               latest              568c4670fa80        2 weeks ago         109MB
-[node1] (local) root@192.168.0.33 ~
-$
-```
+![docker image](image/saving-img-containers/docker_images_end.png)
