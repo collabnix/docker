@@ -20,4 +20,12 @@ nav:
           - Accessing The Container Shell: 4_Accessing-And-Managing-Docker-Container/Accessing-The-Container-Shell.md
           - Managing Docker Containers: 4_Accessing-And-Managing-Docker-Container/Managing-Docker-Containers.md
           - Running A Command Inside Running Container: 4_Accessing-And-Managing-Docker-Container/Running-A-Command-Inside-Running-Container.md
-theme: material
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: cyan
+  font:
+    text: Ubuntu
+  icon:
+    logo: material/cloud
