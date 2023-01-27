@@ -23,12 +23,14 @@ nav:
           - Managing Docker Containers: 4_Accessing-And-Managing-Docker-Container/Managing-Docker-Containers.md
           - Running A Command Inside Running Container: 4_Accessing-And-Managing-Docker-Container/Running-A-Command-Inside-Running-Container.md
   - Docker for Intermediate:
-          - Overview of Docker Compose:5_Docker-For-Intermediate
+          - Overview of Docker Compose: 4_Docker-for-Intermediate/1_Docker_Compose.md
+          - Dockerfile vs Docker Compose: 4_Docker-for-Intermediate/2_Dockerfile-vs-DockerCompose.md
+          - Docker Compose Installation: 4_Docker-for-Intermediate/3_Docker-Compose-Installation.md
   - Docker for Advanced:
           - Overview of Docker Security:6_Docker-For-Advanced
   - Sample Apps:
           - WordPress + Nginx:7_Docker_Apps
-
+          
 # Plugins
 plugins:
   - search:
