@@ -8,25 +8,27 @@
       
       
       
-        <link rel="canonical" href="https://dockerlabs.collabnix.com/">
+        <link rel="canonical" href="https://dockerlabs.collabnix.com/4_Accessing-And-Managing-Docker-Container/Managing-Docker-Containers/">
       
       
+        <link rel="prev" href="../Accessing-The-Container-Shell/">
       
-        <link rel="next" href="2_Installation/docker-desktop-for-linux/">
       
-      <link rel="icon" href="assets/images/favicon.png">
+        <link rel="next" href="../Running-A-Command-Inside-Running-Container/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
     
     
       
-        <title>Collabnix</title>
+        <title>Managing Docker Containers - Collabnix</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.558e4712.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.2505c338.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
       
       
 
@@ -42,7 +44,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -77,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#home" class="md-skip">
+        <a href="#managing-docker-containers" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +93,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Collabnix" class="md-header__button md-logo" aria-label="Collabnix" data-md-component="logo">
+    <a href="../.." title="Collabnix" class="md-header__button md-logo" aria-label="Collabnix" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20Z"/></svg>
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Managing Docker Containers
             
           </span>
         </div>
@@ -177,7 +179,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Collabnix" class="md-nav__button md-logo" aria-label="Collabnix" data-md-component="logo">
+    <a href="../.." title="Collabnix" class="md-nav__button md-logo" aria-label="Collabnix" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20Z"/></svg>
@@ -194,52 +196,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Home
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -279,7 +240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Installation/docker-desktop-for-linux/" class="md-nav__link">
+      <a href="../../2_Installation/docker-desktop-for-linux/" class="md-nav__link">
         Installing Docker Desktop for Linux
       </a>
     </li>
@@ -293,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Installation/docker-desktop-for-windows/" class="md-nav__link">
+      <a href="../../2_Installation/docker-desktop-for-windows/" class="md-nav__link">
         Installing Docker Desktop for Windows
       </a>
     </li>
@@ -307,7 +268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Installation/docker-desktop-for-mac/" class="md-nav__link">
+      <a href="../../2_Installation/docker-desktop-for-mac/" class="md-nav__link">
         Installing Docker Desktop for Mac
       </a>
     </li>
@@ -321,7 +282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Installation/docker-on-raspberrypi/" class="md-nav__link">
+      <a href="../../2_Installation/docker-on-raspberrypi/" class="md-nav__link">
         Installing Docker on Raspberry Pi
       </a>
     </li>
@@ -335,7 +296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Installation/docker-on-jetson-nano/" class="md-nav__link">
+      <a href="../../2_Installation/docker-on-jetson-nano/" class="md-nav__link">
         Installing Docker on NVIDIA Jetson
       </a>
     </li>
@@ -355,18 +316,20 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
-        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="true">
           Docker for Beginners
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -411,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Docker-For-Beginners/1_Getting-Started-with-Docker-Hub/docker-hub/" class="md-nav__link">
+      <a href="../../3_Docker-For-Beginners/1_Getting-Started-with-Docker-Hub/docker-hub/" class="md-nav__link">
         Creating Your Docker Hub Account
       </a>
     </li>
@@ -459,7 +422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/hello-world/" class="md-nav__link">
+      <a href="../../3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/hello-world/" class="md-nav__link">
         Running Hello World Example
       </a>
     </li>
@@ -473,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/working-with-docker-image/" class="md-nav__link">
+      <a href="../../3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/working-with-docker-image/" class="md-nav__link">
         Working with Docker Image
       </a>
     </li>
@@ -487,7 +450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/saving-images-and-containers/" class="md-nav__link">
+      <a href="../../3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/saving-images-and-containers/" class="md-nav__link">
         Saving Images and Containers as tar files
       </a>
     </li>
@@ -501,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/building-first-alpine/" class="md-nav__link">
+      <a href="../../3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/building-first-alpine/" class="md-nav__link">
         Building Your First Alpine Docker Image
       </a>
     </li>
@@ -520,18 +483,20 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
       
       
       
-        <label class="md-nav__link" for="__nav_3_3" tabindex="0" aria-expanded="false">
+        <label class="md-nav__link" for="__nav_3_3" tabindex="0" aria-expanded="true">
           Accessing And Managing Docker Containers
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -549,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Accessing-And-Managing-Docker-Container/Accessing-The-Container-Shell/" class="md-nav__link">
+      <a href="../Accessing-The-Container-Shell/" class="md-nav__link">
         Accessing The Container Shell
       </a>
     </li>
@@ -561,11 +526,73 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="4_Accessing-And-Managing-Docker-Container/Managing-Docker-Containers/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Managing Docker Containers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Managing Docker Containers
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tested-infrastructure" class="md-nav__link">
+    Tested Infrastructure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisite" class="md-nav__link">
+    Pre-requisite
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparations" class="md-nav__link">
+    Preparations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instructions" class="md-nav__link">
+    Instructions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -577,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Accessing-And-Managing-Docker-Container/Running-A-Command-Inside-Running-Container/" class="md-nav__link">
+      <a href="../Running-A-Command-Inside-Running-Container/" class="md-nav__link">
         Running A Command Inside Running Container
       </a>
     </li>
@@ -625,8 +652,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#tested-infrastructure" class="md-nav__link">
+    Tested Infrastructure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisite" class="md-nav__link">
+    Pre-requisite
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparations" class="md-nav__link">
+    Preparations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instructions" class="md-nav__link">
+    Instructions
   </a>
   
 </li>
@@ -647,84 +695,89 @@
 
 
 
-<h1 id="home">Home</h1>
-<p>Learn to build, share and run your contanerised applications easily with Docker</p>
-<h2 id="overview">Overview</h2>
+<h1 id="managing-docker-containers">Managing Docker containers</h1>
+<h2 id="tested-infrastructure">Tested Infrastructure</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Platform</strong></th>
+<th><strong>Number of Instance</strong></th>
+<th><strong>Reading Time</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Play with Docker</strong></td>
+<td><strong>1</strong></td>
+<td><strong>5 min</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="pre-requisite">Pre-requisite</h2>
 <ul>
-<li>Beginners</li>
-<li>Creating Your DockerHub Account</li>
-<li>Getting Started with Docker Image</li>
-<li>
-<p>Running Hello World Example</p>
-</li>
-<li>
-<p>Working with Docker Image</p>
-</li>
-<li>Saving Images and Containers as Tar Files for Sharing</li>
-<li>Building Your First Alpine Docker Image and Push it to DockerHub</li>
-<li>Accessing &amp; Managing Docker Container</li>
-<li>Accessing the Container Shell</li>
-<li>Running a Command inside running Container</li>
-<li>
-<p>Managing Docker Containers</p>
-</li>
-<li>
-<p>Getting Started with Dockerfile</p>
-</li>
-<li>What is Dockerfile</li>
-<li>Understanding Layering Concept with Dockerfile</li>
-<li>Creating Docker Image with<ul>
-<li>Lab #1: Installing GIT</li>
-<li>Lab #2: ADD instruction</li>
-<li>Lab #3: COPY instruction</li>
-<li>Lab #4: CMD instruction</li>
-<li>Lab #5: ENTRYPOINT instruction</li>
-<li>Lab #6: WORKDIR instruction</li>
-<li>Lab #7: RUN instruction</li>
-<li>Lab #8: ARG instruction</li>
-<li>Lab #9: ENV instruction</li>
-<li>Lab #10: VOLUME instruction</li>
-<li>Lab #11: EXPOSE instruction</li>
-<li>Lab #12: LABEL instruction</li>
-<li>Lab #13: ONBUILD instruction</li>
-<li>Lab #14: HEALTHCHECK instruction</li>
-<li>Lab #15: SHELL instruction</li>
-<li>Lab #16: Entrypoint Vs RUN</li>
-<li>Lab #17: USER instruction</li>
+<li>Create an account with <a href="https://hub.docker.com/">DockerHub</a></li>
+<li>Open <a href="https://labs.play-with-docker.com/">PWD</a> Platform on your browser</li>
+<li>Click on <strong>Add New Instance</strong> on the left side of the screen to bring up Alpine OS instance on the right side</li>
 </ul>
-</li>
-<li>
-<p>Writing Dockerfile with Hello Python Script Added</p>
-</li>
-<li>
-<p>Creating Private Docker Registry</p>
-</li>
-<li>Building a Private Docker Registry</li>
-<li>
-<p>Building a Private Docker Registry with UI</p>
-</li>
-<li>
-<p>Docker Volumes</p>
-</li>
-<li>Managing volumes through Docker CLI</li>
-<li>
-<p>Creating Volume Mount from docker run command &amp; sharing same Volume Mounts among multiple containers</p>
-</li>
-<li>
-<p>Docker Networking</p>
-</li>
-<li>The docker network Command<ul>
-<li>Lab #1: Listing the Networks</li>
-<li>Lab #2: Inspecting a Network</li>
-<li>Lab #3: List network driver plugins</li>
-<li>Lab #4: Docker Bridge Networking</li>
-<li>Lab #5: Basics of Docker Bridge Networking</li>
-<li>Lab #6: Connect a Docker container to bridge network</li>
-<li>Lab #7: Test Network Connectivity</li>
-<li>Lab #8: Configure NAT for external connectivity</li>
+<h2 id="preparations">Preparations</h2>
+<ul>
+<li>Clean your docker host using the commands (in bash):</li>
 </ul>
-</li>
+<pre><code>$ docker rm -f $(docker ps -a -q)
+</code></pre>
+<h2 id="instructions">Instructions</h2>
+<ul>
+<li>Run the following containers from the dockerhub:</li>
 </ul>
+<p><code>$ docker run -d -p 5000:5000 --name app1 selaworkshops/python-app:1.0</code></p>
+<p><code>$ docker run -d -p 5001:5001 -e "port=5001" --name app2 selaworkshops/python-app:2.0</code>
+* Ensure the containers are running:</p>
+<p><code>$ docker ps</code>
+* Stop the first container:</p>
+<p><code>$ docker stop app1</code>
+* Kill the second container:</p>
+<p><code>$ docker kill app2</code>
+* Display running containers:</p>
+<p><code>$ docker ps</code>
+* Show all the containers (includind non running containers):</p>
+<p><code>$ docker ps -a</code>
+* Let’s start both containers again:</p>
+<p><code>$ docker start app1 app2</code>
+* Restart the second container:</p>
+<p><code>$ docker restart app2</code>
+* Display the docker host information with:</p>
+<p><code>$ docker info</code>
+* Show the running processes in the first container using:</p>
+<p><code>$ docker top app1</code>
+* Retrieve the history of the second container:</p>
+<p><code>$ docker history selaworkshops/python-app:2.0</code>
+* Inspect the second container image:</p>
+<p><code>$ docker inspect selaworkshops/python-app:2.0</code>
+* Inspect the first container and look for the internal ip:</p>
+<p><code>$ docker inspect app1</code></p>
+<p><code>"Networks": {
+               "bridge": {
+                   "IPAMConfig": null,
+                   "Links": null,
+                   "Aliases": null,
+                   "NetworkID": "822cb66790c6358d9decab874916120f3bdeff7193a4375c94ca54d50832303d",
+                   "EndpointID": "9aa96dc29be08eddc6d8f429ebecd2285c064fda288681a3611812413cbdfc1f",
+                   "Gateway": "172.17.0.1",
+                   "IPAddress": "172.17.0.3",
+                   "IPPrefixLen": 16,
+                   "IPv6Gateway": "",
+                   "GlobalIPv6Address": "",
+                   "GlobalIPv6PrefixLen": 0,
+                   "MacAddress": "02:42:ac:11:00:03",
+                   "DriverOpts": null
+               }
+           }</code>
+* Show the logs of the second container using the flag –follow:</p>
+<p><code>$ docker logs --follow app2</code>
+* Browse to the application and see the containers logs from the terminal:</p>
+<p><code>http://localhost:5001</code>
+* Stop to tracking logs:</p>
+<p><code>$ CTRL + C</code></p>
 
 
   
@@ -817,10 +870,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.51d95adb.min.js"></script>
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
       
     
   </body>

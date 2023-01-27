@@ -8,25 +8,27 @@
       
       
       
-        <link rel="canonical" href="https://dockerlabs.collabnix.com/">
+        <link rel="canonical" href="https://dockerlabs.collabnix.com/3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/saving-images-and-containers/">
       
       
+        <link rel="prev" href="../working-with-docker-image/">
       
-        <link rel="next" href="2_Installation/docker-desktop-for-linux/">
       
-      <link rel="icon" href="assets/images/favicon.png">
+        <link rel="next" href="../building-first-alpine/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
     
     
       
-        <title>Collabnix</title>
+        <title>Saving Images and Containers as tar files - Collabnix</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.558e4712.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.558e4712.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.2505c338.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
       
       
 
@@ -42,7 +44,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -77,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#home" class="md-skip">
+        <a href="#saving-images-and-containers-as-tar-files-for-sharing" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +93,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Collabnix" class="md-header__button md-logo" aria-label="Collabnix" data-md-component="logo">
+    <a href="../../.." title="Collabnix" class="md-header__button md-logo" aria-label="Collabnix" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20Z"/></svg>
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Saving Images and Containers as tar files
             
           </span>
         </div>
@@ -177,7 +179,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Collabnix" class="md-nav__button md-logo" aria-label="Collabnix" data-md-component="logo">
+    <a href="../../.." title="Collabnix" class="md-nav__button md-logo" aria-label="Collabnix" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 20q-2.28 0-3.89-1.57Q1 16.85 1 14.58q0-1.95 1.17-3.48 1.18-1.53 3.08-1.95.63-2.3 2.5-3.72Q9.63 4 12 4q2.93 0 4.96 2.04Q19 8.07 19 11q1.73.2 2.86 1.5 1.14 1.28 1.14 3 0 1.88-1.31 3.19T18.5 20Z"/></svg>
@@ -194,52 +196,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Home
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -279,7 +240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Installation/docker-desktop-for-linux/" class="md-nav__link">
+      <a href="../../../2_Installation/docker-desktop-for-linux/" class="md-nav__link">
         Installing Docker Desktop for Linux
       </a>
     </li>
@@ -293,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Installation/docker-desktop-for-windows/" class="md-nav__link">
+      <a href="../../../2_Installation/docker-desktop-for-windows/" class="md-nav__link">
         Installing Docker Desktop for Windows
       </a>
     </li>
@@ -307,7 +268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Installation/docker-desktop-for-mac/" class="md-nav__link">
+      <a href="../../../2_Installation/docker-desktop-for-mac/" class="md-nav__link">
         Installing Docker Desktop for Mac
       </a>
     </li>
@@ -321,7 +282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Installation/docker-on-raspberrypi/" class="md-nav__link">
+      <a href="../../../2_Installation/docker-on-raspberrypi/" class="md-nav__link">
         Installing Docker on Raspberry Pi
       </a>
     </li>
@@ -335,7 +296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2_Installation/docker-on-jetson-nano/" class="md-nav__link">
+      <a href="../../../2_Installation/docker-on-jetson-nano/" class="md-nav__link">
         Installing Docker on NVIDIA Jetson
       </a>
     </li>
@@ -355,18 +316,20 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
-        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="true">
           Docker for Beginners
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -411,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Docker-For-Beginners/1_Getting-Started-with-Docker-Hub/docker-hub/" class="md-nav__link">
+      <a href="../../1_Getting-Started-with-Docker-Hub/docker-hub/" class="md-nav__link">
         Creating Your Docker Hub Account
       </a>
     </li>
@@ -430,18 +393,20 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
       
       
       
-        <label class="md-nav__link" for="__nav_3_2" tabindex="0" aria-expanded="false">
+        <label class="md-nav__link" for="__nav_3_2" tabindex="0" aria-expanded="true">
           Getting Started with Docker Image
           <span class="md-nav__icon md-icon"></span>
         </label>
@@ -459,7 +424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/hello-world/" class="md-nav__link">
+      <a href="../hello-world/" class="md-nav__link">
         Running Hello World Example
       </a>
     </li>
@@ -473,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/working-with-docker-image/" class="md-nav__link">
+      <a href="../working-with-docker-image/" class="md-nav__link">
         Working with Docker Image
       </a>
     </li>
@@ -485,11 +450,80 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/saving-images-and-containers/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Saving Images and Containers as tar files
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Saving Images and Containers as tar files
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker-beginners-intermediate-advanced" class="md-nav__link">
+    Docker - Beginners | Intermediate | Advanced
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tested-infrastructure" class="md-nav__link">
+    Tested Infrastructure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisite" class="md-nav__link">
+    Pre-requisite
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-nginx-container" class="md-nav__link">
+    Create Nginx Container
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#displaying-running-container" class="md-nav__link">
+    Displaying Running Container
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -501,7 +535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/building-first-alpine/" class="md-nav__link">
+      <a href="../building-first-alpine/" class="md-nav__link">
         Building Your First Alpine Docker Image
       </a>
     </li>
@@ -549,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Accessing-And-Managing-Docker-Container/Accessing-The-Container-Shell/" class="md-nav__link">
+      <a href="../../../4_Accessing-And-Managing-Docker-Container/Accessing-The-Container-Shell/" class="md-nav__link">
         Accessing The Container Shell
       </a>
     </li>
@@ -563,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Accessing-And-Managing-Docker-Container/Managing-Docker-Containers/" class="md-nav__link">
+      <a href="../../../4_Accessing-And-Managing-Docker-Container/Managing-Docker-Containers/" class="md-nav__link">
         Managing Docker Containers
       </a>
     </li>
@@ -577,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4_Accessing-And-Managing-Docker-Container/Running-A-Command-Inside-Running-Container/" class="md-nav__link">
+      <a href="../../../4_Accessing-And-Managing-Docker-Container/Running-A-Command-Inside-Running-Container/" class="md-nav__link">
         Running A Command Inside Running Container
       </a>
     </li>
@@ -625,8 +659,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#docker-beginners-intermediate-advanced" class="md-nav__link">
+    Docker - Beginners | Intermediate | Advanced
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tested-infrastructure" class="md-nav__link">
+    Tested Infrastructure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisite" class="md-nav__link">
+    Pre-requisite
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-nginx-container" class="md-nav__link">
+    Create Nginx Container
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#displaying-running-container" class="md-nav__link">
+    Displaying Running Container
   </a>
   
 </li>
@@ -647,84 +709,70 @@
 
 
 
-<h1 id="home">Home</h1>
-<p>Learn to build, share and run your contanerised applications easily with Docker</p>
-<h2 id="overview">Overview</h2>
+<h1 id="saving-images-and-containers-as-tar-files-for-sharing">Saving Images and Containers as Tar Files for Sharing</h1>
+<h2 id="docker-beginners-intermediate-advanced">Docker - Beginners | Intermediate | Advanced</h2>
+<p>Imagine a scenario where you have built Docker images and containers that you would be interested to keep and share it with your other collaborators or colleagues. The below methods shall help you achieve it.</p>
+<p>Four basic Docker CLI comes into action:</p>
 <ul>
-<li>Beginners</li>
-<li>Creating Your DockerHub Account</li>
-<li>Getting Started with Docker Image</li>
-<li>
-<p>Running Hello World Example</p>
-</li>
-<li>
-<p>Working with Docker Image</p>
-</li>
-<li>Saving Images and Containers as Tar Files for Sharing</li>
-<li>Building Your First Alpine Docker Image and Push it to DockerHub</li>
-<li>Accessing &amp; Managing Docker Container</li>
-<li>Accessing the Container Shell</li>
-<li>Running a Command inside running Container</li>
-<li>
-<p>Managing Docker Containers</p>
-</li>
-<li>
-<p>Getting Started with Dockerfile</p>
-</li>
-<li>What is Dockerfile</li>
-<li>Understanding Layering Concept with Dockerfile</li>
-<li>Creating Docker Image with<ul>
-<li>Lab #1: Installing GIT</li>
-<li>Lab #2: ADD instruction</li>
-<li>Lab #3: COPY instruction</li>
-<li>Lab #4: CMD instruction</li>
-<li>Lab #5: ENTRYPOINT instruction</li>
-<li>Lab #6: WORKDIR instruction</li>
-<li>Lab #7: RUN instruction</li>
-<li>Lab #8: ARG instruction</li>
-<li>Lab #9: ENV instruction</li>
-<li>Lab #10: VOLUME instruction</li>
-<li>Lab #11: EXPOSE instruction</li>
-<li>Lab #12: LABEL instruction</li>
-<li>Lab #13: ONBUILD instruction</li>
-<li>Lab #14: HEALTHCHECK instruction</li>
-<li>Lab #15: SHELL instruction</li>
-<li>Lab #16: Entrypoint Vs RUN</li>
-<li>Lab #17: USER instruction</li>
+<li>The <code>docker export</code> - Export a container’s filesystem as a tar archive</li>
+<li>The <code>docker import</code> - Import the contents from a tarball to create a filesystem image</li>
+<li>The <code>docker save</code> - Save one or more images to a tar archive (streamed to STDOUT by default)</li>
+<li>The <code>docker load</code> - Load an image from a tar archive or STDIN</li>
 </ul>
-</li>
-<li>
-<p>Writing Dockerfile with Hello Python Script Added</p>
-</li>
-<li>
-<p>Creating Private Docker Registry</p>
-</li>
-<li>Building a Private Docker Registry</li>
-<li>
-<p>Building a Private Docker Registry with UI</p>
-</li>
-<li>
-<p>Docker Volumes</p>
-</li>
-<li>Managing volumes through Docker CLI</li>
-<li>
-<p>Creating Volume Mount from docker run command &amp; sharing same Volume Mounts among multiple containers</p>
-</li>
-<li>
-<p>Docker Networking</p>
-</li>
-<li>The docker network Command<ul>
-<li>Lab #1: Listing the Networks</li>
-<li>Lab #2: Inspecting a Network</li>
-<li>Lab #3: List network driver plugins</li>
-<li>Lab #4: Docker Bridge Networking</li>
-<li>Lab #5: Basics of Docker Bridge Networking</li>
-<li>Lab #6: Connect a Docker container to bridge network</li>
-<li>Lab #7: Test Network Connectivity</li>
-<li>Lab #8: Configure NAT for external connectivity</li>
+<h2 id="tested-infrastructure">Tested Infrastructure</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Platform</strong></th>
+<th><strong>Number of Instance</strong></th>
+<th><strong>Reading Time</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Play with Docker</strong></td>
+<td><strong>1</strong></td>
+<td><strong>5 min</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="pre-requisite">Pre-requisite</h2>
+<ul>
+<li>Create an account with <a href="https://hub.docker.com/">DockerHub</a></li>
 </ul>
-</li>
-</ul>
+<h2 id="create-nginx-container">Create Nginx Container</h2>
+<p><code>docker run -d -p 80:80 nginx</code></p>
+<p><img alt="nginx pull" src="../image/saving-img-containers/nginx-pull.png" /></p>
+<h2 id="displaying-running-container">Displaying Running Container</h2>
+<p><code>docker ps -a</code></p>
+<p><img alt="docker images" src="../image/saving-img-containers/psa.png" /></p>
+<p><code>docker export df2 &gt; nginx.tar</code></p>
+<p><img alt="docker export" src="../image/saving-img-containers/export.png" /></p>
+<p>You could commit this container as a new image locally, but you could also use the Docker import command:</p>
+<p><code>docker import - mynginx &lt; nginx.tar</code></p>
+<p><img alt="docker import" src="../image/saving-img-containers/import.png" /></p>
+<p><img alt="docker ps" src="../image/saving-img-containers/docker_images.png" /></p>
+<p>If you wanted to share this image with one of your collaborators, you could upload the tar file on a web server and let your collaborator download it and use the import command on his Docker host.</p>
+<p>If you would rather deal with images that you have already committed, you can use the load and save commands:</p>
+<p><code>docker save -o mynginx1.tar nginx</code></p>
+<p><img alt="docker save" src="../image/saving-img-containers/save.png" /></p>
+<pre><code>$ ls -l
+total 218756
+-rw-------    1 root     root     112844800 Dec 18 02:53 mynginx1.tar
+-rw-r--r--    1 root     root     111158784 Dec 18 02:50 nginx.tar
+</code></pre>
+<pre><code>$ docker rmi mynginx
+Untagged: mynginx:latest
+Deleted: sha256:aaaed50d250a671042e8dc383c6e05012e245f5eaf555d10c40be63f6028ee7b
+Deleted: sha256:41135ad184eaac0f5c4f46e4768555738303d30ab161a7431d28a5ccf1778a0f
+</code></pre>
+<p>Now delete all images and containers running and try to run the below command to load Docker image into your system:</p>
+<pre><code>$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+</code></pre>
+<p><code>docker load &lt; mynginx1.tar</code>
+<img alt="docker load" src="../image/saving-img-containers/load.png" /></p>
+<p><img alt="docker image" src="../image/saving-img-containers/docker_images_end.png" /></p>
 
 
   
@@ -817,10 +865,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.51d95adb.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.51d95adb.min.js"></script>
       
     
   </body>

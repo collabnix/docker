@@ -2,57 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dockerlabs.collabnix.com/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dockerlabs.collabnix.com/building-first-alpine/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <loc>https://dockerlabs.collabnix.com/2_Installation/docker-desktop-for-linux/</loc>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dockerlabs.collabnix.com/docker-desktop-for-linux/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <loc>https://dockerlabs.collabnix.com/2_Installation/docker-desktop-for-mac/</loc>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dockerlabs.collabnix.com/docker-desktop-for-mac/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <loc>https://dockerlabs.collabnix.com/2_Installation/docker-desktop-for-windows/</loc>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dockerlabs.collabnix.com/docker-desktop-for-windows/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <loc>https://dockerlabs.collabnix.com/2_Installation/docker-on-jetson-nano/</loc>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dockerlabs.collabnix.com/docker-hub/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <loc>https://dockerlabs.collabnix.com/2_Installation/docker-on-raspberrypi/</loc>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dockerlabs.collabnix.com/docker-on-jetson-nano/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <loc>https://dockerlabs.collabnix.com/3_Docker-For-Beginners/1_Getting-Started-with-Docker-Hub/docker-hub/</loc>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dockerlabs.collabnix.com/docker-on-raspberrypi/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <loc>https://dockerlabs.collabnix.com/3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/building-first-alpine/</loc>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dockerlabs.collabnix.com/hello-world/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <loc>https://dockerlabs.collabnix.com/3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/hello-world/</loc>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dockerlabs.collabnix.com/saving-images-and-containers/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <loc>https://dockerlabs.collabnix.com/3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/saving-images-and-containers/</loc>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dockerlabs.collabnix.com/working-with-docker-image/</loc>
-         <lastmod>2023-01-18</lastmod>
+         <loc>https://dockerlabs.collabnix.com/3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/working-with-docker-image/</loc>
+         <lastmod>2023-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dockerlabs.collabnix.com/4_Accessing-And-Managing-Docker-Container/Accessing-The-Container-Shell/</loc>
+         <lastmod>2023-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dockerlabs.collabnix.com/4_Accessing-And-Managing-Docker-Container/Managing-Docker-Containers/</loc>
+         <lastmod>2023-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dockerlabs.collabnix.com/4_Accessing-And-Managing-Docker-Container/Running-A-Command-Inside-Running-Container/</loc>
+         <lastmod>2023-01-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

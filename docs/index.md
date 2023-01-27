@@ -6,17 +6,17 @@ Learn to build, share and run your contanerised applications easily with Docker
 ## Overview
 
 *  Beginners
- - Creating Your DockerHub Account
- - Getting Started with Docker Image
- - Running Hello World Example
+   - Creating Your DockerHub Account
+   - Getting Started with Docker Image
+   - Running Hello World Example
 
 * Working with Docker Image
- - Saving Images and Containers as Tar Files for Sharing
- - Building Your First Alpine Docker Image and Push it to DockerHub
- - Accessing & Managing Docker Container
- - Accessing the Container Shell
- - Running a Command inside running Container
- - Managing Docker Containers
+   - Saving Images and Containers as Tar Files for Sharing
+   - Building Your First Alpine Docker Image and Push it to DockerHub
+   - Accessing & Managing Docker Container
+   - Accessing the Container Shell
+   - Running a Command inside running Container
+   - Managing Docker Containers
 
 * Getting Started with Dockerfile
   - What is Dockerfile
