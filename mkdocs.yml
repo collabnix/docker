@@ -18,6 +18,14 @@ nav:
           - Working with Docker Image: 3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/working-with-docker-image.md
           - Saving Images and Containers as tar files: 3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/saving-images-and-containers.md
           - Building Your First Alpine Docker Image: 3_Docker-For-Beginners/2_Getting-Started-With-Docker-Image/building-first-alpine.md
+      - Getting started with Dockerfile:
+          - Writing a dockerfile: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/1_Writing-dockerfile.md
+          - Layering a dockerfile: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/2_Layering-Dockerfile.md 
+      - Labs:
+          - Installing Git: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/3_Lab1_dockerfile_git.md 
+          - ADD Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/4_Lab2_Create-an-image-with-ADD-instruction.md
+          - COPY Insatruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/5_Lab3_dockerfile_copy.md
+          - CMD Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/6_Lab4_cmd.md
       - Accessing And Managing Docker Containers:
           - Accessing The Container Shell: 4_Accessing-And-Managing-Docker-Container/Accessing-The-Container-Shell.md
           - Managing Docker Containers: 4_Accessing-And-Managing-Docker-Container/Managing-Docker-Containers.md
