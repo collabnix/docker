@@ -24,8 +24,22 @@ nav:
       - Labs:
           - Installing Git: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/3_Lab1_dockerfile_git.md 
           - ADD Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/4_Lab2_Create-an-image-with-ADD-instruction.md
-          - COPY Insatruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/5_Lab3_dockerfile_copy.md
+          - COPY Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/5_Lab3_dockerfile_copy.md
           - CMD Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/6_Lab4_cmd.md
+          - Entrypoint Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/7_Lab5_Entrypoint.md
+          - Workdir Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/7_Lab5_Entrypoint.md
+          - Run Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/9_Lab8_run.md
+          - Arg Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/10_Lab9_arg.md
+          - Volume Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/10_Lab11_volume.mdd
+          - Env Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/11_Lab10_env.md
+          - Expose Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/12_Lab11_expose_instruction.md
+          - Label Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/13_Lab12_label.md
+          - Onbuild Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/14_Lab13_onbuild.md
+          - Healthcheck Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/15_Lab14_healthcheck.md
+          - Create-an-image-with-SHELL: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/16_Lab15-Create-an-image-with-SHELL-instruction.md
+          - Entrypoint-instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/17_Lab16-Entrypoint-instruction.md
+          - User Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/18_Lab17-user.md
+          - Hello Python Script Instruction: 3_Docker-For-Beginners/3_Getting-Started-with-Dockerfile/19_lab18_dockerfile_python.md
       - Accessing And Managing Docker Containers:
           - Accessing The Container Shell: 4_Accessing-And-Managing-Docker-Container/Accessing-The-Container-Shell.md
           - Managing Docker Containers: 4_Accessing-And-Managing-Docker-Container/Managing-Docker-Containers.md
