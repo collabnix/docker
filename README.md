@@ -15,7 +15,7 @@
 ## Clone the repo
 
 ```
-git clone https://github.com/collabnix/docke
+git clone https://github.com/collabnix/docker
 ```
 
 ## Bring up the Site
